@@ -15,7 +15,11 @@ slightly sagged from sweat and the sun shown hard into the corneas of my eyes.
 
 `newtext.html` 
 ```
-<html lang="en"><head>
+
+    <!doctype html>
+
+    <html lang="en">
+    <head>
     <meta charset="utf-8">
 
     <title>Emphasize.py</title>
@@ -28,8 +32,14 @@ slightly sagged from sweat and the sun shown hard into the corneas of my eyes.
 
     <body>
     
-Slouching <em>away</em> from <em>the</em> twisted <em>sheets</em> <em>no</em> laundered <em>item</em> <b>rested</b> on the <b>chair,</b> <b>or</b> layed <em>neatly</em> folded in <b>oak</b> drawers, <b>or</b> layed dirty <b>on</b> the <em>floor.</em> Beyond <b>comprehension</b> <b>clothing</b> <em>I</em> <em>own</em> had <em>vanished.</em> <em>I</em> <em>wore</em> the <b>pair</b> of jeans slept in, a red hoodie and <em>blue</em> sports <em>coat</em> <em>paired</em> with <b>black</b> <em>slippers</em> <em>out</em> <em>the</em> <em>door</em> <em>late.</em> The <em>heat</em> <em>built-up</em> <em>in</em> <em>Spring.</em> It was <b>humid</b> <b>and</b> <b>I</b> <b>could</b> feel <em>the</em> skipped shower manifesting <b>itself</b> within <em>the</em> aroma of my unwashed <em>clothes.</em> <em>One</em> shoe <b>worn</b> <b>down</b> to the skin. The <em>other</em> talking. <em>Jeans</em> <b>slightly</b> sagged <b>from</b> sweat and <em>the</em> sun <b>shown</b> <b>hard</b> into <b>the</b> <em>corneas</em> of <b>my</b> <b>eyes.</b>
-
+Slouching away <em>from</em> the <b>twisted</b> <em>sheets</em> no laundered item rested <em>on</em> the <em>chair,</em>
+or <em>layed</em> neatly folded <em>in</em> <em>oak</em> drawers, <b>or</b> layed <b>dirty</b> <em>on</em> <em>the</em> floor.
+<b>Beyond</b> <em>comprehension</em> clothing I own <em>had</em> <b>vanished.</b> <b>I</b> <em>wore</em> the pair of jeans
+<b>slept</b> in, <b>a</b> red hoodie and blue sports coat <em>paired</em> <b>with</b> <b>black</b> slippers <b>out</b>
+the <b>door</b> late. The heat built-up in Spring. It <b>was</b> humid <em>and</em> <b>I</b> <em>could</em> <em>feel</em>
+the skipped shower <b>manifesting</b> itself within <b>the</b> aroma <b>of</b> <em>my</em> unwashed clothes.
+One shoe worn <b>down</b> to <b>the</b> skin. <em>The</em> <b>other</b> <b>talking.</b> <em>Jeans</em> slightly sagged <em>from</em>
+<em>sweat</em> and <em>the</em> sun shown hard into <em>the</em> corneas <em>of</em> <em>my</em> <b>eyes.</b>
 </body></html>
 ```
 
