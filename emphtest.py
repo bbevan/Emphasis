@@ -7,27 +7,36 @@ import random
 # the tests effictively synchronize r with the seed to
 # the rng. This is its intended purpose.
 text = "one two three four five"
-r = [0,0,1,1,1,1,1,1,1,1] 
+
+
+# let the seed be set
+#random.seed(123456789)
 
 class TestEmph(unittest.TestCase):
+    r = [0,0,1,1,1,1,1,1,1,1] 
+    s = 0
 
     def test_splitplaintext(self):
         self.assertEqual(splitplaintext(text), ["one", "two", "three", "four", "five"])
 
     def test_chooseemph(self):
+        
+        self.s = self.r.pop()
 
-        if (r.pop() == 0): 
+        if (s == 0): 
             self.assertEqual(chooseemph(123456789), ['<em>', '</em>'])
-        else:
+        elif (s == 1):
             self.assertEqual(chooseemph(123456789), ['<b>', '</b>']) 
 
     def test_applyemph(self):
 
-        if (r.pop() == 0): #applyemph chose not to apply the emphasis
+        self.s = self.r.pop()
+
+        if (s == 0): #applyemph chose not to apply the emphasis
             self.assertEqual(applyemph('one',123456789), 'one')
-        else:
-            result = applyemph('one',123456789)
-            '<b>one</b>' or '<em>one</em>'
+        elif (s==1):
+            self.assertIn(applyemph('one',123456789), ['<b>one</b>' , '<em>one</em>'])
+            
     
     # assert that r is in sync with the rng.
     # remember to run this as the last test.
