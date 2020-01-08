@@ -31,9 +31,12 @@ def splititerate(text):
 # the whitespace separator for joining individuals words back together
 s = " "
 
-def emphasize():
+def main():
     print("<html><body>")
     for line in fileinput.input():
         emphtext = splititerate(line)
         print(s.join(emphtext))
     print("</body></html>")
+
+if __name__ == 'main':
+    main()

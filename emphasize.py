@@ -1,3 +1,4 @@
 import emph
 
-emph.emphasize()
+# The main function of emph provides the labor.
+emph.main()
