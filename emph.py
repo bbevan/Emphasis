@@ -1,7 +1,7 @@
 import random
 import fileinput
 
-emphasis = [['<em>', '</em>'], ['<i>', '</i>']]
+emphasis = [['<em>', '</em>'], ['<b>', '</b>']]
 
 
 def splitplaintext(text):
@@ -32,10 +32,30 @@ def splititerate(text):
 s = " "
 
 def main():
-    print("<html><body>")
+    a = '''
+    <!doctype html>
+
+    <html lang="en">
+    <head>
+    <meta charset="utf-8">
+
+    <title>Emphasize.py</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+    </head>
+
+    <body>
+    '''
+    
+    print(a)
+    
     for line in fileinput.input():
         emphtext = splititerate(line)
         print(s.join(emphtext))
+    
     print("</body></html>")
 
 if __name__ == 'main':

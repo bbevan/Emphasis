@@ -11,13 +11,13 @@ class TestStringMethods(unittest.TestCase):
     def test_chooseemph(self):
         random.seed(1337)
         self.assertEqual(chooseemph(), ['<i>', '</i>'])
-        self.assertEqual(chooseemph(), ['<em>', '</em>'])
+        self.assertEqual(chooseemph(), ['<b>', '</b>'])
         self.assertEqual(chooseemph(), ['<i>', '</i>'])
         self.assertEqual(chooseemph(), ['<i>', '</i>'])
 
     def test_applyemph(self):
         random.seed(1337)
-        self.assertEqual(applyemph("one"), "<em>one</em>")
+        self.assertEqual(applyemph("one"), "<b>one</b>")
         self.assertEqual(applyemph("two"), "<i>two</i>")
 
 

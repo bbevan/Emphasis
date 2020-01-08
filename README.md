@@ -1,6 +1,6 @@
 # Emphasis
-Reads in a plaintext file from the command line. Outputs a randomly emphasized and italicized HTML5 file by adding either 
-`<em></em>` or `<i></i>` tags to random words.
+Reads in a plaintext file from the command line. Outputs a randomly emphasized and bolded HTML5 file by adding either 
+`<b></b>` or `<i></i>` tags to random words.
 
 ## use
 `$~ python3 emphasis.py text.txt > emphasized_text.txt`
