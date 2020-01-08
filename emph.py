@@ -33,7 +33,6 @@ s = " "
 
 def emphasize():
     print("<html><body>")
-    #text = "one two three four five"
     for line in fileinput.input():
         emphtext = splititerate(line)
         print(s.join(emphtext))
