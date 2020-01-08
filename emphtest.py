@@ -8,9 +8,8 @@ import random
 # the rng. This is its intended purpose.
 text = "one two three four five"
 
-
-# let the seed be set
-#random.seed(123456789)
+em = ['<em>', '</em>']
+b = ['<b>', '</b>']
 
 class TestEmph(unittest.TestCase):
     r = [0,0,1,1,1,1,1,1,1,1] 
@@ -24,9 +23,9 @@ class TestEmph(unittest.TestCase):
         self.s = self.r.pop()
 
         if (s == 0): 
-            self.assertEqual(chooseemph(123456789), ['<em>', '</em>'])
+            self.assertEqual(chooseemph(123456789), em)
         elif (s == 1):
-            self.assertEqual(chooseemph(123456789), ['<b>', '</b>']) 
+            self.assertEqual(chooseemph(123456789), b) 
 
     def test_applyemph(self):
 
@@ -46,6 +45,19 @@ class TestEmph(unittest.TestCase):
         for x in r:
             self.assertEqual(r.pop(), random.randint(0,1))
 
+
+
+    #expected value function for chooseemph test
+    def test_expectedvalue(self):
+        i = 1000
+        count = 0
+
+        for x in range(i):
+            if chooseemph() == em:
+                count +=1
+
+        self.assertAlmostEqual(count/i, 0.5, 1)
+ 
 
 if __name__ == '__main__':
     unittest.main()
