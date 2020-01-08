@@ -7,11 +7,17 @@ emphasis = [['<em>', '</em>'], ['<b>', '</b>']]
 def splitplaintext(text):
     return text.split()
 
-def chooseemph():
+def chooseemph(*seed):
+    if seed:
+        random.seed(seed)
+
     coin2 = random.randint(0,1)
     return emphasis[coin2]
 
-def applyemph(myString):
+def applyemph(myString, *seed):
+    if seed:
+        random.seed(seed)
+
     coin1 = random.randint(0,1)
     emph = chooseemph()
 
