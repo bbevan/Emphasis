@@ -25,8 +25,6 @@ class TestEmph(unittest.TestCase):
 
     def test_applyemph(self):
         q = r.pop()
-        #self.assertEqual(applyemph('one', seed), '<em>one</em>')
-        #self.assertEqual(applyemph('one', seed), '<b>one</b>')
 
         if (q == 0):
             result = applyemph('one',123456789)
