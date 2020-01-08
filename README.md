@@ -3,7 +3,7 @@ Reads in a plaintext file from the command line. Outputs a randomly emphasized a
 `<b></b>` or `<i></i>` tags to random words.
 
 ## use
-`$~ python3 emphasis.py text.txt > emphasized_text.txt`
+`$~ python3 emphasize.py text.txt > emphasized_text.txt`
 
 ## Example output
 `text.txt`
