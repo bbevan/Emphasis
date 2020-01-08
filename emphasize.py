@@ -1,0 +1,3 @@
+import emph
+
+emph.emphasize()
