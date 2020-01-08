@@ -1,5 +1,5 @@
 # Emphasis
-Reads in a plaintext file from the command line. Outputs a randomly emphasized and italicized html file by adding either 
+Reads in a plaintext file from the command line. Outputs a randomly emphasized and italicized HTML5 file by adding either 
 `<em></em>` or `<i></i>` tags to random words.
 
 ## use
